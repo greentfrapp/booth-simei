@@ -1,0 +1,8 @@
+https://developers.google.com/my-business/content/review-data
+https://developers.google.com/places/web-service/search
+https://www.instagram.com/developer/endpoints/locations/
+https://www.instagram.com/developer/changelog/
+https://github.com/facebookarchive/python-instagram/blob/master/instagram/client.py
+https://www.instagram.com/explore/locations/595428258/?__a=1
+https://www.instagram.com/explore/locations/595428258/sutd-101/
+https://www.openstreetmap.org/query?lat=1.34259&lon=103.95913#map=18/1.34211/103.96074
