@@ -344,8 +344,8 @@
 
 		var name = document.getElementsByClassName('infobox')[0]
 		name.innerHTML = '<b>' + layer.feature.properties.name + '</b></br>'
-		name.innerHTML += layer.feature.properties.type + '</br>'
-		name.innerHTML += layer.feature.id
+		name.innerHTML += layer.feature.properties.type //+ '</br>'
+		// name.innerHTML += layer.feature.id
 	}
 
 	var geojson;
