@@ -113,6 +113,8 @@ for folder in folders:
 				feature['properties']['notes'] = notes.notes[feature['id']]
 			else:
 				feature['properties']['notes'] = ''
+			if feature['id'] in notes.images:
+				feature['properties']['images'] = notes.images[feature['id']]
 	elif folder == 'parc_lumiere':
 		for feature in folders[folder]:
 			feature['properties']['category'] = 2
@@ -129,6 +131,8 @@ for folder in folders:
 				feature['properties']['notes'] = notes.notes[feature['id']]
 			else:
 				feature['properties']['notes'] = ''
+			if feature['id'] in notes.images:
+				feature['properties']['images'] = notes.images[feature['id']]
 	elif 'bungalows' in folder:
 		for feature in folders[folder]:
 			feature['properties']['category'] = 4
@@ -149,6 +153,8 @@ for folder in folders:
 			elif feature['id'] in ['way/454176576', 'way/454176581', 'way/454176573', 'way/454176572', 'way/454176574', 'way/454176568', 'way/454176578', 'way/454176580']:
 				feature['properties']['data'] = car_data.data['jln_pergam']
 				feature['properties']['has_car_data'] = True
+			if feature['id'] in notes.images:
+				feature['properties']['images'] = notes.images[feature['id']]
 	elif folder in ['changi_rise', 'melville_park', 'savannah', 'sunhaven', 'tropicana']:
 		for feature in folders[folder]:
 			feature['properties']['category'] = 3
@@ -160,6 +166,8 @@ for folder in folders:
 				feature['properties']['notes'] = notes.notes[feature['id']]
 			else:
 				feature['properties']['notes'] = ''
+			if feature['id'] in notes.images:
+				feature['properties']['images'] = notes.images[feature['id']]
 			if folder in ['sunhaven', 'tropicana']:
 				feature['properties']['data'] = car_data.data[folder]
 				feature['properties']['has_car_data'] = True

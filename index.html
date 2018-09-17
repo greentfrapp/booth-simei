@@ -61,7 +61,7 @@
 			grid-template-columns: 180px 120px repeat(3, auto);
   			grid-template-rows: repeat(2, 50px) auto 3px auto;
 			grid-template-areas:
-				'name name name name name'
+				'name name name name camera'
 				'category category category category category'
 				'type units price price price'
 				'divider divider divider divider divider'
@@ -76,6 +76,19 @@
 
 		#content-name {
 			grid-area: name;
+		}
+
+		#content-camera {
+			grid-area: camera;
+			visibility: hidden;
+		}
+
+		#content-camera img {
+			float: right;
+		}
+
+		#content-camera img:hover {
+			cursor: pointer;
 		}
 
 		#content-category {
@@ -145,9 +158,53 @@
 			width: 90%;
 			height: 'whatever';
 		}
+
+		img.content-img {
+			width: 50%;
+			margin-top: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+
+		#gallery div.caption {
+			font-style: italic;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		#gallery {
+			position: absolute;
+			display: none;
+			background-color: rgba(255, 255, 255, 0.95);
+			width: 97%;
+			height: 97%;
+			left:0;
+			right:0;
+			top: 0;
+			bottom: 0;
+			margin:auto;
+			z-index: 999999999;
+			overflow-y: scroll;
+			font-family: 'Open Sans', sans-serif;
+		}
+		#gallery #gallery-button {
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			/*background-color: rgba(100,100,100, 1);*/
+			top: 10%;
+			right: 10%;
+		}
+
+		#gallery #gallery-button:hover {
+			cursor: pointer;
+		}
 	</style>
 </head>
 <body>
+<div id='gallery'>
+</div>
 <div id='container'>
 <div id='map'></div>
 <!-- <div id='divider'></div> -->
@@ -155,6 +212,9 @@
 	<div id='grid-container'>
 		<div id="content-name">
 			<h1 id="content-name-input">Booth Survey - Simei East</h1>
+		</div>
+		<div id="content-camera">
+			<img src="images/camera-icon.jpg" style='height: 25px;' onclick=toggleGallery()>
 		</div>
 		<div id="content-category">
 			<h3 id="content-category-h3">Category - <span id="content-category-input">2</span></h3>
@@ -244,7 +304,7 @@
 				fillColor: getColor(feature.properties.category)
 			}
 		} else {
-			if (feature.properties.notes == '') {
+			if (feature.properties.notes == '' && !feature.properties.images) {
 				return {
 					weight: 0.5,
 					opacity: 1,
@@ -384,6 +444,18 @@
     	console.log('TEST')
     }
 
+    var galleryIsVisible = false
+
+    var toggleGallery = function() {
+    	if (!galleryIsVisible) {
+    		document.getElementById('gallery').style.display = 'block'
+    		galleryIsVisible = true
+    	} else {
+    		document.getElementById('gallery').style.display = 'none'
+    		galleryIsVisible = false
+    	}
+    }
+
     var legendbox = document.getElementsByClassName('legend')
     legendbox[0].onclick = function(){
     	toggleLegend()
@@ -409,6 +481,19 @@
 			document.getElementById('content-price-input').innerHTML = '$' + layer.feature.properties.price
 		}
 		document.getElementById('content-notes').innerHTML = layer.feature.properties.notes + '<div id=car_plot></div>'
+
+		if (layer.feature.properties.images) {
+			document.getElementById('content-camera').style.visibility = 'visible'
+			document.getElementById('gallery').innerHTML = '<div id=gallery-button onclick=toggleGallery()><img src="images/x-icon.png" style="height:20px;"></div><div style="height: 10%;"></div>'
+			for (var i = 0; i < layer.feature.properties.images.length; i++) {
+				// document.getElementById('content-notes').innerHTML += '<img class=content-img src="../booth-simei-images/resized_547x364/' + layer.feature.properties.images[i].image + '.JPG"><div class=caption>' + layer.feature.properties.images[i].caption + '</div>'
+				document.getElementById('gallery').innerHTML += '<img class=content-img src="https://headlesselephant.com/muspp/resized_1368x912/' + layer.feature.properties.images[i].image + '.JPG"><div class=caption>' + layer.feature.properties.images[i].caption + '</div>'
+			}
+			document.getElementById('gallery').innerHTML += '<div style="height: 10%;"></div>'
+		} else {
+			document.getElementById('content-camera').style.visibility = 'hidden'
+		}
+
 		if (layer.feature.properties.has_car_data) {
 			var data = layer.feature.properties.data
 			var layout = {
@@ -428,6 +513,7 @@
 			};
 			Plotly.newPlot('car_plot', data, layout);
 		}
+
 	}
 	
 

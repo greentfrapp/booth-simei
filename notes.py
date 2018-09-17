@@ -297,9 +297,6 @@ notes['way/454176567'] = '''
 	<p>
 		<b>Unit 769</b> is the Kinderland Preschool and also occupies Unit 86 behind it along Jalan Pergam.
 	</p>
-	<p>
-		See below for data collected on cars along this stretch.
-	</p>
 '''
 
 # Jln Pergam
@@ -315,6 +312,9 @@ notes['way/454176576'] = notes['way/454176581'] = notes['way/454176573'] = notes
 	</p>
 	<p>
 		<b>Unit 86</b> is a preschool known as Kinderland Preschool and also occupies Unit 769 along Upper Changi Road East on the other side.
+	</p>
+	<p>
+		See below for data collected on cars along this stretch.
 	</p>
 '''
 
@@ -491,3 +491,328 @@ notes['way/454188459'] = '''
 		See below for data collected in Sunhaven's carpark.
 	</p>
 '''
+
+images = {}
+
+# Upper Changi Road East
+
+images['way/454176569'] = [
+	{
+		'image': 'DSC08070_1368x912',
+		'caption': 'Unit 761 vacated and in poor condition.'
+	},
+	{
+		'image': 'DSC08069_1368x912',
+		'caption': 'Stark contrast to neighbouring Units 763 and 759.'
+	}
+]
+
+images['way/454176567'] = [
+	{
+		'image': 'DSC08068_1368x912',
+		'caption': 'Kinderland Preschool at Unit 769 along Upper Changi Road East.'
+	}
+]
+
+# Jln Pergam
+
+images['way/454176576'] = images['way/454176581'] = images['way/454176573'] = images['way/454176572'] = images['way/454176574'] = images['way/454176568'] = images['way/454176578'] = images['way/454176580'] = [
+	{
+		'image': 'DSC08078_1368x912',
+		'caption': 'Units 74 and 76 are modern-looking three- to four-storey buildings with white-grey facades.'
+	},
+	{
+		'image': 'DSC08077_1368x912',
+		'caption': 'In contrast, Units 78 and 80 are obviously older, with more traditional tiled roofs and one- and two-storeyed respectively.'
+	}
+]
+
+# Unit 135
+images['way/454180148'] = [
+	{
+		'image': 'DSC08082_1368x912',
+		'caption': 'Scrawled house number on random plastic.'
+	},
+	{
+		'image': 'DSC08083_1368x912',
+		'caption': 'A peek into a messy interior with multiple public bins.'
+	},
+	{
+		'image': 'DSC08081_1368x912',
+		'caption': 'The entrance to Unit 135 is hidden by trees, in comparison to its neighbour.'
+	}
+]
+
+# Units 131 and 129
+images['way/454180175'] = images['way/454180160'] = [
+	{
+		'image': 'DSC08087_1368x912',
+		'caption': 'Units 129 and 131 - another pair of older single-storeyed houses.'
+	}
+]
+
+# Unit 125
+images['way/454180172'] = [
+	{
+		'image': 'DSC08089_1368x912',
+		'caption': 'Metal sculpture in frontyard of Unit 125.'
+	}
+]
+
+# Unit 123
+images['way/454180136'] = [
+	{
+		'image': 'DSC08093_1368x912',
+		'caption': 'Extravagant Unit 123; contrast bold unit number with Unit 135.'
+	},
+	{
+		'image': 'DSC08096_1368x912',
+		'caption': 'A peek into the flora at Unit 123.'
+	},
+	{
+		'image': 'DSC08097_1368x912',
+		'caption': 'Shiny blue BMW parked outside old building at Unit 117.'
+	}
+]
+
+# Jalan Kuang
+# Unit 29
+images['way/454180167'] = [
+	{
+		'image': 'DSC08100_1368x912',
+		'caption': 'Another modern-looking building with a big bold number plate; behind the gates sit a Mazda and a BMW.'
+	}
+]
+# Unit 16
+images['way/454180170'] = [
+	{
+		'image': 'DSC08102_1368x912',
+		'caption': 'Unit 16 is under renovation; massive trees in the frontyard.'
+	},
+	{
+		'image': 'DSC08103_1368x912',
+		'caption': 'Construction work of Unit 16 eating into neighbouring Unit 14.'
+	}
+]
+
+# Jalan Pelatok South
+# Unit 24
+images['way/454180152'] = [
+	{
+		'image': 'DSC08106_1368x912',
+		'caption': 'Old single-storeyed building that might not be out of place in a kampung.'
+	},
+	{
+		'image': 'DSC08104_1368x912',
+		'caption': 'Owner out front picking at weeds.'
+	}
+]
+
+# Jalan Segam
+images['way/454180135'] = [
+	{
+		'image': 'DSC08109_1368x912',
+		'caption': 'Ducks in Unit 4!'
+	},
+	{
+		'image': 'DSC08111_1368x912',
+		'caption': 'Older-looking buildings at Units 4 and 6.'
+	}
+]
+images['way/454180155'] = [
+	{
+		'image': 'DSC08114_1368x912',
+		'caption': 'Older-looking and slightly messing building at Unit 8.'
+	}
+]
+images['way/454180146'] = [
+	{
+		'image': 'DSC08113_1368x912',
+		'caption': 'Contraption filled with dead flying ants outside Units 10 and 12.'
+	}
+]
+
+# Jalan Tiga Ratus
+
+images['way/454258732'] = images['way/454258730'] = images['way/454258767'] = images['way/454258705'] = images['way/454258743'] = images['way/454258772'] = images['way/454258711'] = images['way/454258749'] = images['way/454258788'] = images['way/454258720'] = [
+	{
+		'image': 'DSC08175_1368x912',
+		'caption': 'Conventional slightly older terrace houses along Jalan Tiga Ratus.'
+	}
+]
+
+# Tropicana
+
+images['way/454258694'] = images['way/454258699'] = [
+	{
+		'image': 'DSC08177_1368x912',
+		'caption': 'Gorgeous vintage car in the Tropicana carpark.'
+	}
+]
+
+#HDB
+# Blk 162
+images['way/72674485'] = images['way/72674517'] = images['way/72674539'] = [
+	{
+		'image': 'DSC08122_1368x912',
+		'caption': 'Public notices at void deck of Blk 162.'
+	},
+	{
+		'image': 'DSC08125_1368x912',
+		'caption': 'Karaoke singing contest - ages 45 and above!'
+	},
+	{
+		'image': 'DSC08126_1368x912',
+		'caption': 'Spartan corridors - Part I.'
+	},
+	{
+		'image': 'DSC08127_1368x912',
+		'caption': 'Spartan corridors - Part II.'
+	},
+	{
+		'image': 'DSC08128_1368x912',
+		'caption': 'Spartan corridors - Part III.'
+	},
+	{
+		'image': 'DSC08132_1368x912',
+		'caption': 'View onto neighbouring blocks.'
+	}
+]
+# Blk 161
+images['way/72674592'] = images['way/72674527'] = images['way/72674500'] = [
+	{
+		'image': 'DSC08134_1368x912',
+		'caption': 'Disposed wine crate at Blk 161.'
+	},
+	{
+		'image': 'DSC08135_1368x912',
+		'caption': 'Public education against illegal lending.'
+	},
+	{
+		'image': 'DSC08136_1368x912',
+		'caption': 'Extended garden for first-floor residents of Blk 161.'
+	},
+	{
+		'image': 'DSC08137_1368x912',
+		'caption': 'More space for first-floor residents.'
+	},
+	{
+		'image': 'DSC08139_1368x912',
+		'caption': 'Bananas!'
+	},
+	{
+		'image': 'DSC08140_1368x912',
+		'caption': 'Personal garden for first-floor residents of Blk 159.'
+	}
+]
+# Blk 156
+images['way/72674548'] = [
+	{
+		'image': 'DSC08144_1368x912',
+		'caption': 'Mama shop at void deck of Blk 156 replaced by air-conditioned 7-11.'
+	},
+	{
+		'image': 'DSC08145_1368x912',
+		'caption': 'Interesting playground outside Blk 156.'
+	},
+	{
+		'image': 'DSC08147_1368x912',
+		'caption': 'Another Intergeneration Fitness Corner.'
+	},
+	{
+		'image': 'DSC08158_1368x912',
+		'caption': 'Grandparents gathering while grandchildren are playing; one of the grandfathers was climbing up the vertical pole.'
+	}
+]
+# Blk 165
+images['way/72674461'] = [
+	{
+		'image': 'DSC08153_1368x912',
+		'caption': 'Less spartan-looking corridor at Blk 165.'
+	},
+	{
+		'image': 'DSC08154_1368x912',
+		'caption': 'View overlooking playground and other blocks.'
+	}
+]
+# Blk 163
+images['way/72674442'] = [
+	{
+		'image': 'DSC08156_1368x912',
+		'caption': 'The sole Mercedes Benz at the carpark near Blk 163.'
+	}
+]
+
+# Parc Lumiere
+# Parc Lumiere Carpark
+images['way/170733140'] = [
+	{
+		'image': 'DSC08164_1368x912',
+		'caption': 'Playground above carpark.'
+	},
+	{
+		'image': 'DSC08165_1368x912',
+		'caption': 'Linkway from playground to apartments.'
+	}
+]
+'''
+	<p>
+		DBSS flats are an interesting case - public housing flats developed by private developers, without pricing controls from the HDB.
+	</p>
+	<p>
+		Intuitively, we could expect a larger range of car brands, with both higher-end brands such as BMW and Mercedes Benz and household brands such as Toyota and Honda.
+	</p>
+	<p>
+		See below for data collected in this carpark.
+	</p>
+'''
+
+# Parc Lumiere Blocks
+images['way/170846285'] = images['way/170846275'] = images['way/170846276'] = images['way/170846277'] = images['way/170846278'] = images['way/170846279'] = images['way/170846280'] = images['way/170846282'] = [
+	{
+		'image': 'DSC08162_1368x912',
+		'caption': 'Welcome to Parc Lumiere!'
+	},
+	{
+		'image': 'DSC08160_1368x912',
+		'caption': 'Playgroup advert for young couples and new parents at Parc Lumiere.'
+	},
+	{
+		'image': 'DSC08161_1368x912',
+		'caption': 'Apparently Parc Lumiere has its own Residents\'s Committee.'
+	},
+	{
+		'image': 'DSC08163_1368x912',
+		'caption': 'Outer facade.'
+	},
+	{
+		'image': 'DSC08166_1368x912',
+		'caption': 'Smaller and darker corridors, as compared to regular HDB flats.'
+	},
+	{
+		'image': 'DSC08169_1368x912',
+		'caption': 'Enclosed corridor with artificial lighting.'
+	},
+	{
+		'image': 'DSC08168_1368x912',
+		'caption': 'Less natural light reaching the corridors.'
+	}
+]
+'''
+	<p>
+		The blocks here are generally more compact and closer to each other, as compared to the regular HDB flats.
+	</p>
+	<p>
+		Each 12-storey flat has four to six units per floor and every flat is served by two lifts. This is obviously much denser lift coverage as compared to the HDB flats.
+	</p>
+	<p>
+		The corridors receive little natural light and can be very dark in the afternoons and evenings, before the artificial lights kick in.
+	</p>
+	<p>
+		Interestingly, Parc Lumiere has its own Parc Lumiere Residents' Committee (RC). It is unclear if this RC only serves Parc Lumiere residents.
+	</p>
+'''
+
+
+
+
