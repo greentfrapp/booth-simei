@@ -329,7 +329,7 @@
 	function highlightFeature(e) {
 		var layer = e.target;
 
-		if (layer.feature.properties.notes != '') {
+		if (layer.feature.properties.notes != '' || layer.feature.properties.images) {
 			layer.setStyle({
 				weight: 3,
 				color: getBorderColor(layer.feature.properties.category),
