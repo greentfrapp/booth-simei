@@ -74,15 +74,30 @@
 <script type="text/javascript" src="all_geojson.js"></script>
 <script type="text/javascript">
 
-	var map = L.map('map').setView([1.3453099609309793, 103.95996451377869], 17);
-
-	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3JlZW50ZnJhcHAiLCJhIjoiY2ptNGE1cTB1MWV5azNxazg0ODUzdGZydiJ9.lQCreykk_XmjoDgCEyd47w', {
+	var streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3JlZW50ZnJhcHAiLCJhIjoiY2ptNGE1cTB1MWV5azNxazg0ODUzdGZydiJ9.lQCreykk_XmjoDgCEyd47w', {
 		maxZoom: 20,
 		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 		id: 'mapbox.mapbox-streets-v7'
-	}).addTo(map);
+	})
+    var satellite = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3JlZW50ZnJhcHAiLCJhIjoiY2ptNGE1cTB1MWV5azNxazg0ODUzdGZydiJ9.lQCreykk_XmjoDgCEyd47w', {
+		maxZoom: 20,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox.mapbox-streets-v7'
+	})
+
+	var map = L.map('map', {layers: [satellite, streets]}).setView([1.3453099609309793, 103.95996451377869], 17);
+
+	// L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3JlZW50ZnJhcHAiLCJhIjoiY2ptNGE1cTB1MWV5azNxazg0ODUzdGZydiJ9.lQCreykk_XmjoDgCEyd47w', {
+	// 	maxZoom: 20,
+	// 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+	// 		'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+	// 		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+	// 	id: 'mapbox.mapbox-streets-v7'
+	// }).addTo(map);
 
 	function getColor(d) {
 		if (d == 0) {
@@ -185,10 +200,26 @@
 		});
 	}
 
+	// geojson = L.geoJson(blocks, {
+	// 	style: style,
+	// 	onEachFeature: onEachFeature
+	// }).addTo(map);
+
 	geojson = L.geoJson(blocks, {
 		style: style,
 		onEachFeature: onEachFeature
-	}).addTo(map);
+	}).addTo(map)
+
+	var baseMaps = {
+	    "Satellite": satellite,
+	    "Streets": streets,
+	};
+
+	var overlayMaps = {
+	    "Categories": geojson
+	};
+
+	L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 	var legend = L.control({
 		position: 'bottomleft',
