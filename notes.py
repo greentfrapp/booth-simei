@@ -227,6 +227,13 @@ notes['way/454180148'] = '''
 	</p>
 '''
 
+# Units 129/131
+notes['way/454180175'] = notes['way/454180160'] = '''
+	<p>
+		<b>Units 129 and 131</b> are another pair of old-ish buildings.
+	</p>
+'''
+
 # Unit 125
 notes['way/454180172'] = '''
 	<p>
@@ -277,6 +284,31 @@ notes['way/454180146'] = '''
 	</p>
 '''
 
+# Jalan Kuang
+
+# Unit 29
+notes['way/454180167'] = '''
+	<p>
+		<b>Unit 29</b> is modern-looking with a big bold house number, again contrasting Unit 135.
+	</p>
+'''
+
+# Unit 16
+notes['way/454180170'] = '''
+	<p>
+		<b>Unit 16</b> was under renovation, with massive trees in its frontyard. The renovation works also ate into the space of neighbouring Unit 14.
+	</p>
+'''
+
+# Jalan Pelatok (South)
+# Unit 24
+notes['way/454180152'] = '''
+	<p>
+		<b>Unit 24</b> is an old one-storey building that might not seem out of place in a kampung. The owner was out at the frontyard picking at weeds.
+	</p>
+'''
+
+
 # Jln Tiga Ratus
 notes['way/454258732'] = notes['way/454258730'] = notes['way/454258767'] = notes['way/454258705'] = notes['way/454258743'] = notes['way/454258772'] = notes['way/454258711'] = notes['way/454258749'] = notes['way/454258788'] = notes['way/454258720'] = '''
 	<p>
@@ -298,6 +330,44 @@ notes['way/454176567'] = '''
 		<b>Unit 769</b> is the Kinderland Preschool and also occupies Unit 86 behind it along Jalan Pergam.
 	</p>
 '''
+notes['way/455160203'] = '''
+	<p>
+		<b>Unit 729</b> might be vacated or renovating. There are bags of dirt that have been there for several weeks.
+	</p>
+'''
+notes['way/454258752'] = '''
+	<p>
+		<b>Unit 725</b> is another old building that might not be indicative of wealth.
+	</p>
+'''
+notes['way/454258734'] = '''
+	<p>
+		Bananas outside <b>Unit 713</b> just along Upper Changi Road East!
+	</p>
+'''
+notes['way/454258761'] = '''
+	<p>
+		Really badly-maintained walls at <b>Unit 701</b> with rust streaks running down the walls. Top of walls lined with barb wire that is undoubtedly rusty as hell - intruders beware of tetanus.
+	</p>
+'''
+notes['way/454258783'] = '''
+	<p>
+		<b>Units 687 and 689</b> are a pair of old buildings right outside of Upper Changi MRT.
+	</p>
+'''
+
+# Meragi Road
+
+notes['way/454258709'] = notes['way/454258756'] = notes['way/454258766'] = '''
+	<p>
+		The units at <b>22</b> and <b>24</b> are unusual as there are two buildings in the rear that seem disconnected from the main road in the map. In actual fact, there is a small road that leads to the buildings, closed off by gates.
+'''
+
+notes['way/454258762'] = '''
+	<p>
+		There were bananas outside <b>Unit 27</b>!
+	</p>
+'''
 
 # Jln Pergam
 notes['way/454176576'] = notes['way/454176581'] = notes['way/454176573'] = notes['way/454176572'] = notes['way/454176574'] = notes['way/454176568'] = notes['way/454176578'] = notes['way/454176580'] = '''
@@ -315,6 +385,60 @@ notes['way/454176576'] = notes['way/454176581'] = notes['way/454176573'] = notes
 	</p>
 	<p>
 		See below for data collected on cars along this stretch.
+	</p>
+'''
+
+notes['way/454258790'] = '''
+	<p>
+		There were bananas in the backyard of <b>Unit 47</b>!
+	</p>
+'''
+
+notes['way/454258787'] = '''
+	<p>
+		It is often interesting to see juxtapositions of old and new buildings, which might make for interesting neighbourly interactions.
+	</p>
+	<p>
+		For example, <b>Units 35 and 37</b> are obviously older houses, compared to <b>Units 38 and 40</b> just a few metres away.
+	</p>
+'''
+
+notes['way/454258787'] = notes['way/454258704'] = '''
+	<p>
+		It is often interesting to see juxtapositions of old and new buildings, which might make for interesting neighbourly interactions.
+	</p>
+	<p>
+		For example, <b>Units 35 and 37</b> are obviously older houses, compared to <b>Units 38 and 40</b> just a few metres away.
+	</p>
+'''
+
+notes['way/454258695'] = '''
+	<p>
+		A particularly heartless house owner lined the top of the walls at <b>Unit 29</b> with glass shards.
+	</p>
+'''
+
+notes['way/454258789'] = '''
+	<p>
+		The frontyard of <b>Unit 26</b> was literally caged up, possibly keeping some particularly ferocious pet.
+	</p>
+'''
+
+notes['way/454258764'] = '''
+	<p>
+		<b>Units 20 and 22</b> are a pair of old buildings, maybe the owners have known each other for quite some years.
+	</p>
+'''
+
+notes['way/454258797'] = '''
+	<p>
+		<b>Unit 18</b> is another retro-looking building, apparently owned by a hoarder. Frontyard filled with things that seem like a mosquito's breeding haven.
+	</p>
+'''
+
+notes['way/454258768'] = '''
+	<p>
+		Bananas outside <b>Unit 4</b>!
 	</p>
 '''
 
