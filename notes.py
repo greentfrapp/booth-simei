@@ -388,6 +388,12 @@ notes['way/454176576'] = notes['way/454176581'] = notes['way/454176573'] = notes
 	</p>
 '''
 
+notes['way/454258696'] = '''
+	<p>
+		<b>Unit 40</b> is another rural-looking building and comes with a power line at the back of the building!
+	</p>
+'''
+
 notes['way/454258790'] = '''
 	<p>
 		There were bananas in the backyard of <b>Unit 47</b>!
@@ -691,6 +697,18 @@ images['way/454176576'] = images['way/454176581'] = images['way/454176573'] = im
 	{
 		'image': 'DSC08077_1368x912',
 		'caption': 'In contrast, Units 78 and 80 are obviously older, with more traditional tiled roofs and one- and two-storeyed respectively.'
+	}
+]
+
+# Unit 40
+images['way/454258696'] = [
+	{
+		'image': 'DSC08316_1368x912',
+		'caption': 'A peek into the interior of Unit 40.'
+	},
+	{
+		'image': 'DSC08317_1368x912',
+		'caption': 'Rarely seen power lines behind Unit 40!'
 	}
 ]
 
