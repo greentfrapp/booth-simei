@@ -361,11 +361,18 @@ notes['way/454258783'] = '''
 notes['way/454258709'] = notes['way/454258756'] = notes['way/454258766'] = '''
 	<p>
 		The units at <b>22</b> and <b>24</b> are unusual as there are two buildings in the rear that seem disconnected from the main road in the map. In actual fact, there is a small road that leads to the buildings, closed off by gates.
+	</p>
 '''
 
 notes['way/454258762'] = '''
 	<p>
 		There were bananas outside <b>Unit 27</b>!
+	</p>
+'''
+
+notes['way/454176566'] = '''
+	<p>
+		<b>Unit 12</b> is a really interesting-looking building!
 	</p>
 '''
 
@@ -860,6 +867,13 @@ images['way/454258762'] = [
 	{
 		'image': 'DSC08215_1368x912',
 		'caption': 'Bananas at unit 27!'
+	}
+]
+
+images['way/454176566'] = [
+	{
+		'image': 'DSC08311_1368x912',
+		'caption': 'Cool-looking building at Unit 12.'
 	}
 ]
 
